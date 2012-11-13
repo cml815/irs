@@ -111,7 +111,7 @@ Enter a nonprofit name in this box to search for 990s from <a href="http://bulk.
 <thead><tr><th>Type</th><th>Year</th><th>Name</th><th>Assets</th><th>Size</th></tr></thead>
 <tbody>
 {%for line in results%}
-<tr><td>{{line.doctype}}</td><td>{{line.year}}</td><td><a href="http://bulk.resource.org{{line.url}}">{{line.text}}</a></td><td>${{line.assetts|intcomma}}</td><td>{{line.size}}</td></tr>
+<tr><td>{{line.doctype}}</td><td>{{line.year}}</td><td><a href="http://bulk.resource.org{{line.url}}" target="_BLANK">{{line.text}}</a></td><td>${{line.assetts|intcomma}}</td><td>{{line.size}}</td></tr>
 {%endfor%}
 </tbody>
 </table>
