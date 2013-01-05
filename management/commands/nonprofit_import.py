@@ -24,9 +24,6 @@ class Command(NoArgsCommand):
         os.system('gunzip -c /tmp/irs/manifests.tgz | tar -xvf -')
 
 
-        #fout.writerow(['filename','doctype','year','url','id','name','formtype','date','size','assetts','hash','md5'])
-        #manifest.2010_12_EO.txt,EO,90EZ,/irs.gov/eo/2010_12_EO/68-0142907_990EZ_200812.pdf,68-0142907,SKYLINE HARVEST INC,990EZ,12/2008,252 kB,0.00,96fd2051-50fc-11ed-0000-575aa217dde7,526b283d3d0c76540b9e9de16099523cde70659c724418b94ddf67a2e35b40b2
-
         for folder in os.listdir('.'):
             for filename in os.listdir(folder):
                 if filename in existing_filenames:
@@ -49,6 +46,6 @@ class Command(NoArgsCommand):
                     objs.append(Nonprofit(**d))
                     if len(objs)==1000:
                         Nonprofit.objects.bulk_create(objs)
-                    objs = []
+                        objs = []
                 Nonprofit.objects.bulk_create(objs)
 
