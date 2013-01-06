@@ -6,7 +6,6 @@ def index(request):
     
     if request.GET and request.GET['q'] and len(request.GET['q'])>2:
         q = request.GET['q']
-        #results = Nonprofit.objects.filter(name__icontains=q).order_by('name','-year')
         results = Nonprofit.objects.extra(where=['body_tsv @@ plainto_tsquery(%s)'], params=[q])
     else:
         q = ''
@@ -14,4 +13,4 @@ def index(request):
        
            
     return render_to_response('nonprofits.html', {'results': results, 'q': q })
-
+    

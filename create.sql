@@ -21,6 +21,6 @@ CREATE INDEX irs_nonprofit_filename_idx ON irs_nonprofit USING btree (filename);
 
 CREATE INDEX irs_nonprofit_tsv ON irs_nonprofit USING gin (body_tsv);
 
-CREATE TRIGGER irs_nonprofit_tsvectorupdate BEFORE INSERT OR UPDATE ON irs_nonprofit FOR EACH ROW EXECUTE PROCEDURE tsvector_update_trigger('tsv_body', 'pg_catalog.english', 'text');
+CREATE TRIGGER irs_nonprofit_tsvectorupdate BEFORE INSERT OR UPDATE ON irs_nonprofit FOR EACH ROW EXECUTE PROCEDURE tsvector_update_trigger('body_tsv', 'pg_catalog.english', 'text');
 
 
