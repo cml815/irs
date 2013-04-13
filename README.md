@@ -1,16 +1,3 @@
-** Purpose of project: ** Speed the access of foundation IRS data uploaded by bulk.resource.org. 
-
-
-README from Public Resource Org on its reports on tax exempt organizations: https://bulk.resource.org/irs.gov/eo/readme.html
-
-This project only extracts data organizations characterized as Private Foundations (Type PF). 
-
-** Project Tasks (In progress): ** 
-
-
-----------------
-README from original source code available on Github [here](https://github.com/lukerosiak/irs)
-
 Use PostGreSQL full-text search and Django on an index compiled from a zip file to search all IRS nonprofits' financial docs (990s) by nonprofit name, as uploaded by bulk.resource.org.
 
 Application adapted from: 
