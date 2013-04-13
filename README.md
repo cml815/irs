@@ -1,8 +1,20 @@
+** Purpose of project: ** Speed the access of foundation IRS data uploaded by bulk.resource.org. 
+
+While Guidestar (www.guidestar.org) provides free access to any nonprofit IRS 990 form, it does not allow searches by nonprofit category. Foundations searches are available elsewhere, but either they are limited or require payment. 
+
+** Project Tasks (In progress): ** 
+
+
+----------------
+README from original source code available on Github [here](https://github.com/lukerosiak/irs)
+
 Use PostGreSQL full-text search and Django on an index compiled from a zip file to search all IRS nonprofits' financial docs (990s) by nonprofit name, as uploaded by bulk.resource.org.
+
+Application adapted from: 
 
 By Luke Rosiak, a reporter at the Washington Times (lukerosiak.info)
 
-A working instance of this tool is at http://lukerosiak.info/irs/
+A working instance of this tool is available http://lukerosiak.info/irs/
 
 Released under the GNU license
 
