@@ -1,6 +1,9 @@
 ** Purpose of project: ** Speed the access of foundation IRS data uploaded by bulk.resource.org. 
 
-While Guidestar (www.guidestar.org) provides free access to any nonprofit IRS 990 form, it does not allow searches by nonprofit category. Foundations searches are available elsewhere, but either they are limited or require payment. 
+
+README from Public Resource Org on its reports on tax exempt organizations: https://bulk.resource.org/irs.gov/eo/readme.html
+
+This project only extracts data organizations characterized as Private Foundations (Type PF). 
 
 ** Project Tasks (In progress): ** 
 
